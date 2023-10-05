@@ -1,0 +1,71 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #0b2434;
+  padding: 20px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f5f5f5;
+  height: 400px;
+  max-width: 800px;
+  border-radius: 5px;
+}
+
+.dice-grid {
+  display: grid;
+  grid-template-rows: auto auto;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 17.92px;
+}
+.die {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  background: #fff;
+  box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+
+.die-num {
+  font-size: 2rem;
+  font-family: 'Karla';
+}
+
+.roll-btn {
+  width: 92.16px;
+  height: 50px;
+  flex-shrink: 0;
+  background-color: #5035ff;
+  margin-top: 28px;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  text-align: center;
+  font-family: Karla;
+  font-size: 16.384px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.roll-btn:hover {
+  background-color: #3c28bf;
+}
+
+.roll-btn:active {
+  box-shadow: 0px 4px 8px rgba(darken(dodgerblue, 30%));
+  transform: scale(0.92);
+}
