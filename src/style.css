@@ -3,7 +3,9 @@
 }
 
 body {
-  margin: 0;
+  display: flex;
+  justify-content: center;
+  margin-top: 25vh;
   background: #0b2434;
   padding: 20px;
 }
@@ -14,9 +16,22 @@ main {
   align-items: center;
   justify-content: center;
   background-color: #f5f5f5;
-  height: 400px;
-  max-width: 800px;
+  height: auto;
+  max-width: 1000px;
   border-radius: 5px;
+  padding: 28px;
+}
+
+.title {
+  font-size: 40px;
+  margin: 0;
+}
+
+.instructions {
+  font-family: 'Inter', sans-serif;
+  font-weight: 400;
+  margin-top: 0;
+  text-align: center;
 }
 
 .dice-grid {
@@ -24,6 +39,7 @@ main {
   grid-template-rows: auto auto;
   grid-template-columns: repeat(5, 1fr);
   gap: 17.92px;
+  margin-bottom: 40px;
 }
 .die {
   display: flex;
@@ -33,10 +49,11 @@ main {
   height: 50px;
   flex-shrink: 0;
   border-radius: 10px;
-  background: #fff;
+  /* background: #fff; */
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.15);
   cursor: pointer;
 }
+
 
 .die-num {
   font-size: 2rem;
@@ -68,4 +85,21 @@ main {
 .roll-btn:active {
   box-shadow: 0px 4px 8px rgba(darken(dodgerblue, 30%));
   transform: scale(0.92);
+}
+
+.counters {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 100%;
+  padding: 12px 18px;
+}
+
+.roll-counter,
+.game-counter,
+.record-counter {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
